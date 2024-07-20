@@ -1,0 +1,89 @@
+.Team {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+
+.Team .title span{
+    color: var(--main-color);
+}
+@media (max-width:768px) {
+    .Team .title,
+    .Team .title span{
+        font-size: 33px;
+    }
+   
+}
+.Team .but{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+.teamcard {
+    text-align: center;
+    padding: 30px 10px;
+    background-color: white;
+    box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+    width: 325px !important;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-bottom: 20px;
+    height: 315px;
+}
+.teamcard .picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.teamcard .picture img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+}
+.teamcard .teamname{
+    color: var(--main-color);
+    font-size: 20px;
+
+}
+.teamcard .caption p{
+    padding: 20px 10px;
+    color: #777;
+}
+
+.team-content .slick-dots li.slick-active button:before {
+    color: var(--main-color) !important;
+}
+
+.team-content ul.slick-dots {
+    bottom: -40px;
+}
+.team-content .slick-arrow.slick-next{
+    background-color: var(--main-color) !important;
+    color: white;
+    font-weight: bold;
+    padding:10px 45px 48px 14px !important;
+    margin-right:-30px !important;
+    border-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -ms-border-radius: 50% !important;
+    -o-border-radius: 50% !important;
+}
+
+
+.slick-next::before{
+    font-family: "Font Awesome 5 Free" !important;
+    opacity: 1000 !important;
+    font-size: 33px !important;
+}

@@ -1,42 +1,95 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  /* start global rules  */
+
+  :root{
+    --main-color:#7659FF;
+    --section-color: #EBEBEB80;
+    --second-color:#FFc549;
+    --third-color:#FF77B4;
+    --sec-color:#79BFFB;
+    --font-color:#FFFFFF;
+    --main-padding: 50px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+*{
+    margin: 0;
+    padding: 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+html {
+    scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.card {
-  padding: 2em;
+a {
+    text-decoration: none;
 }
 
-.read-the-docs {
-  color: #888;
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-size: 44px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color:var(--main-color);
+    color:white;
+    width: fit-content;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+@media (max-width:767px) {
+    .button{
+        font-weight: bold !important;
+    }
+}
+.container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+    /* Small  */
+
+@media (min-width:768px) {
+    .container{
+        width: 750px;
+    }
+}
+
+    /* Medium  */
+
+@media (min-width:992px) {
+    .container{
+        width: 970px;
+    }
+}
+
+    /* Large  */
+    
+@media (min-width:1200px) {
+    .container{
+        width: 1170px;
+    }
 }

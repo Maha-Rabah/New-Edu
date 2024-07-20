@@ -1,0 +1,78 @@
+.programcards{
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    position: relative;
+}
+.programcards .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 40px;
+}
+
+.programcards .container h3{
+    padding: 40px 40px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.programcards .container p{
+    margin: 10px 40px;
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: bold;
+
+}
+.programcards .container .progcard{
+    position: relative;
+    height: 250px;
+}
+.programcards .container .learnmore{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    right:70px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.programcards .container .learnmore a{
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    position: relative;
+
+
+}
+
+.programcards .container .learnmore i{
+    position: absolute;
+    font-size: 40px;
+    margin-left: 15px;
+    top: -10px;
+
+}
+
+
+.programcards .container .green h3{
+    color: #79BFFB;;
+}
+.programcards .container .green{
+    background-color: rgb(121 191 251 / 15%);;
+
+}
+
+.programcards .container .pink{
+    background-color: rgb(255 119 180 / 15%);;
+}
+.programcards .container .pink h3{
+    color:#FF77B4;
+}
+
+.programcards .container .yellowcard h3{
+    color: #FFC249;
+}
+.programcards .container .yellowcard{
+    background-color: rgb(255 194 73 / 15%);
+}

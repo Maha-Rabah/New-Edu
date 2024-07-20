@@ -1,0 +1,172 @@
+.contactUs-container {
+    display:flex;
+    max-width:1000px;
+    margin:4em auto;
+    /* flex-wrap:wrap; */
+}
+
+.worldMap {
+    width:100%;
+    position: relative;
+}
+
+
+.worldMap .map {
+    width:100%;
+    height:100%;
+    background-color: (220 220 220 / 17%)
+
+}
+.worldMap .line {
+    position: absolute;
+    width: 250px;
+    right: 50px;
+    top: 119px;
+    z-index: 99;
+}
+
+.worldMap .syria {
+    position: absolute;
+    right: 196px;
+    top: 180px;
+}
+.worldMap .dot1{
+    position: absolute;
+    right: 47px;
+    top: 168px;
+    z-index: 76;
+}
+.worldMap .dot2{
+    position: absolute;
+    right: 270px;
+    top: 163px;
+    z-index: 76
+}
+.worldMap .dot3{
+    position: absolute;
+    left: 192px;
+    top: 107px;
+    z-index: 76;
+}
+.worldMap .dot4{
+    position: absolute;
+    left: 218px;
+    top: 128px;;
+    z-index: 76;
+}
+.worldMap .dot5{
+    position: absolute;
+    left: 215px;
+    top: 138px;
+    z-index: 76;
+}
+.worldMap .dot6{
+    position: absolute;
+    left: 224px;
+    top: 138px;
+    z-index: 76;
+}
+@media (max-width:992px) {
+    .worldMap {
+        display: none;
+    }
+}
+.form-container { 
+    flex-direction:column;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:1.5em;
+    box-shadow: 10px 6px 8px 0px #0000000D;
+
+}
+
+.form-container input
+,.form-container textarea {
+    width:70%;
+    height:44px;
+    font-size:1rem;
+    padding:0 0.5em;
+    /* margin:0 auto; */
+    border-radius:5px;
+    color: black;
+    border: 2px solid #DCDCDC47;
+    background: #FCFCFC;
+
+    ;
+}
+.form-container textarea{
+    resize: none;
+    height: 100px;
+}
+.form-container input:focus
+,.form-container textarea{
+    outline: none;
+}
+.form-container input::placeholder,
+.form-container textarea::placeholder{
+    color:#DCDCDC;
+    
+}
+.form-container input:nth-last-child(2){
+    height:120px;
+    text-align:left
+}
+
+/* .form-container input:last-child{
+    width:150px;
+    height:50px;
+    text-align:center;
+    background-color: #7659FF;
+    color:white;
+    margin-bottom: 10px;
+    cursor: pointer;
+} */
+
+@media screen and (max-width: 950px) {
+    .contactUs-container {
+        flex-direction:column;
+        max-width:400px;
+        gap:3em;
+        align-items:center;
+        padding:2em 0;
+    }
+    .worldMap {
+        width:80%;
+
+    }
+}
+
+.yellowcon{
+    left:-30px;
+    position: absolute;
+}
+.rozecon{
+    right: 0;
+    bottom: 40px;
+    position: absolute;
+}
+
+@media screen and (max-width: 426px) {
+    .yellowcon{
+        width:80px;
+    }
+    .rozecon {
+        width:80px;
+    }
+}
+@media (max-width:768px) {
+    .rozecon{
+        right: 0px;
+        bottom: 215px;
+        position: absolute;
+    }
+    .contactUs-container .button{
+        margin-bottom: 40px;
+    }
+    .contactUs-container .button{
+        font-size: 14px !important;
+    }
+}
+

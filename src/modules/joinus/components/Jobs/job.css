@@ -1,0 +1,223 @@
+
+.joinUs-op-job {
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    background-color:#fff;
+    justify-content:center;
+    box-shadow:1px 1px 4px gray;
+    border-radius:3px;
+    padding:1em 2em;
+    margin-bottom:2em;
+    width:80%;
+}
+
+.firstline {
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    flex-wrap:wrap;
+}
+
+.firstline p {
+    padding:0.55em 0.8em;
+    background-color:#7659FF;
+    color:#fff;
+    font-size:0.9rem;
+    margin-bottom:1em;
+    font-weight:600;
+}
+
+.firstline a {
+    text-decoration:none;
+    color:#000;
+}
+
+.firstline a span {
+    color:#7659FF;
+    font-size:1.2rem;
+}
+
+.firstline .job-desc {
+    margin-top: 0.5em;
+    display:flex;
+    gap:0.3em;
+    margin-bottom:1em;
+    align-items:center;
+}
+
+
+.job-pos  {
+    font-size:1.1em;
+    font-weight:700;
+    color:#7659FF;
+    margin-bottom:1em;
+}
+
+
+
+.joinUs-op-details {
+    width:100%;
+    display:flex;
+    
+
+}
+
+.joinUs-op-details .detail {
+    display:flex;
+    font-weight:bold;
+}
+
+.joinUs-op-details .icon {
+    width:20px;
+    margin-right:0.2em;
+}
+
+.joinUs-op-details ul{
+    width:100%;
+    padding:0;
+    display:flex;
+    list-style:none;
+    justify-content:flex-start;
+    align-items:center;
+    gap:2em;
+    font-size:0.9rem;
+    flex-wrap:wrap;
+}
+
+.joinUs-op-details ul li:last-child span {
+    color: #888;
+}
+@media (max-width: 768px) {
+
+    .joinUs-op-job {
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+        justify-content:center;
+        box-shadow:1px 1px 4px gray;
+        border-radius:3px;
+        padding:0.5em 1em;
+        margin-bottom:2em;
+        width:100%;
+    }
+
+    .firstline p {
+        font-size:0.6rem;
+    }
+
+    .firstline .job-desc {
+        font-size:0.6em;
+        margin-top:-2px;
+    }
+
+    .job-pos  {
+        font-size:0.8em;
+    }
+
+    .joinUs-op-details {
+        display:flex;
+        justify-content:flex-start;
+    }
+
+    .joinUs-op-details .icon {
+        width:10px;
+        margin-right:0.2em;
+    }
+
+    .joinUs-op-details ul{
+        font-size:0.5rem;
+        gap:0;
+    }
+
+    .joinUs-op-details .detail {
+        margin-right:2em;
+    }
+
+}
+
+ /* Modal css */
+
+ .btn-modal {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+}
+
+.modal {
+    height:100vh;
+    overflow-y:scroll;
+}
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+.modal-content {
+    position: absolute;
+    top: 600px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f1f1f1;
+    padding: 2em 2em;
+    border-radius: 3px;
+    width:75%;
+    line-height:1.3;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+}
+
+@media (max-width: 1225px) {
+    .modal-content {
+        top: 700px;
+    }
+}
+
+@media (max-width: 769px) {
+    .modal-content {
+        top: 750px;
+    }
+ }
+
+
+
+
+ @media (max-width: 460px) {
+    .modal-content {
+        top: 950px;
+        font-size:0.92em;
+        width:75%;
+    }
+
+
+    .modal-content h2{
+        font-size:1.3em;
+    }
+ }
+
+ @media (max-width: 376px) {
+    .modal-content {
+        top: 1050px;
+    }
+ }
+
+ @media (max-width: 321px) {
+    .modal-content {
+        font-size:0.85em;
+    }
+  }

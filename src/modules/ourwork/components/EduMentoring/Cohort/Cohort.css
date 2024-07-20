@@ -1,0 +1,28 @@
+.cohort{
+    padding-bottom: var(--main-padding);
+    position: relative;
+}
+.cohort .container{
+    display: flex;
+    justify-content: center;
+}
+
+.cohort img{
+    width: 650px;
+}
+.bluecor{
+    right: 0;
+    position: absolute;
+bottom: 0;
+}
+
+/* resp */
+
+@media (max-width: 768px) {
+    .cohort img{
+        max-width: 100%;
+    }
+    .cohort .title{
+        font-size: 33px;
+    }
+}

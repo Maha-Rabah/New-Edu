@@ -1,0 +1,48 @@
+.Numbers {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    position: relative;
+    background:var(--section-color);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    margin-top: var(--main-padding);
+    margin-bottom: var(--main-padding);
+}
+@media (max-width:768px) {
+    .Numbers .title{
+        font-size: 26px;
+    }
+}
+
+
+.Numbers .container .info ul{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    align-items: center;
+    gap: 20px;
+    margin: 50px 0 70px;
+}
+
+
+.Numbers .container .info ul li{
+    padding-right: 30px;
+}
+
+.Numbers .container .info .num{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--main-color);
+
+}
+@media (max-width:768px) {
+    .Numbers .container .info ul{
+        display: flex;
+        flex-direction: column;
+    }
+.Numbers .container .info .num{
+        font-size: 20px;
+    }
+}

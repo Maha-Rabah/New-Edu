@@ -1,0 +1,75 @@
+.values {
+    padding-bottom: var(--main-padding);
+    position: relative;
+    padding-top: 18px
+}
+
+.values .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: 30px;
+}
+    
+    
+@media (max-width:768px) {
+    .values .title{
+        font-size: 33px;
+    }
+}
+@media (min-width:1200px) {
+    .values .container{
+        width: 850px;
+    }
+}
+.values .yellow2{
+    position: absolute;
+    top: 10px;
+    left: -40px;
+}
+
+.values .blue2{
+    position: absolute;
+    right: 50px;
+    bottom: 40px;
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+}
+
+.valuecard {
+    box-shadow: 0px 6px 16px 0px #00000040;
+    text-align: center;
+    margin-top: 20px;
+}
+.valuecard .icon img{
+    height: 100px;
+    margin: 40px;
+}
+@media (max-width:768px) {
+    .valuecard .icon img{
+        width: 80px;
+    }
+    .valuecard .caption{
+    font-size: 18px;
+
+    }
+}
+
+.valuecard .caption{
+    background-color: var(--third-color);
+    padding: 20px 10px;
+    font-size: 24px;
+    color: white;
+    height: 87px;
+    width: 100%;
+}
+
+/* resp */
+
+@media (max-width:426px) {
+    .valuecard .caption {
+        font-size:20px;
+    }
+} 
