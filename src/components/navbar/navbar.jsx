@@ -64,6 +64,7 @@ const Navbar = () => {
                     <ul className='nav-items'>
                       <li><NavLink to="/" onClick={() => setMenuOpened((prev)=> !prev)}>Home</NavLink></li>
                       <li><NavLink to="about" onClick={() => setMenuOpened((prev)=> !prev)}>About</NavLink></li>
+                      <li><NavLink to="dashboard" onClick={() => setMenuOpened((prev)=> !prev)}>Dashbourd</NavLink></li>
                       <li className='dropdown' ref={dropdownRef}>
                         <div className="dropdown-btn" onClick={toggleDropdown}>
                           <span>Our Work </span>

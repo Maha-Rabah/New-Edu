@@ -20,43 +20,43 @@ const EduLens = () => {
   }
 ///////////////////////////////////////////////////////////
 
-const edudata=[{
-  img:lens1,
-  name: "The Italian Government Scholarship _ منحة الحكومة الإيطالية",
-  url: "https://t.me/EduLens_Podcast/4",
-},
-{
-  img:lens2,
-  name: 'Jusoor & Rowan Williams Cambridge Studentship - منحة جسور & رون ويليمس في جامعة كامبردج',
-  description: 'Jusoor & Rowan Williams Cambridge Studentship - منحة جسور & رون ويليمس في جامعة كامبردج ',
-  url: 'https://t.me/EduLens_Podcast/11'
-  }, 
-{
-  img:lens3,
-  name: 'DAAD Scholarship - منحة الـ دااد',
-   description: 'DAAD Scholarship - منحة الـ دااد',
-    url: 'https://t.me/EduLens_Podcast/15', 
-},
-{
-  img:lens4,
-  name: 'Erasmus Mundus Scholarship - منحة إيراسموس موندوس',
-  description: 'Erasmus Mundus Scholarship - منحة إيراسموس موندوس',
-  url: 'https://t.me/EduLens_Podcast/20',
-  }
-]
+// const edudata=[{
+//   img:lens1,
+//   name: "The Italian Government Scholarship _ منحة الحكومة الإيطالية",
+//   url: "https://t.me/EduLens_Podcast/4",
+// },
+// {
+//   img:lens2,
+//   name: 'Jusoor & Rowan Williams Cambridge Studentship - منحة جسور & رون ويليمس في جامعة كامبردج',
+//   description: 'Jusoor & Rowan Williams Cambridge Studentship - منحة جسور & رون ويليمس في جامعة كامبردج ',
+//   url: 'https://t.me/EduLens_Podcast/11'
+//   }, 
+// {
+//   img:lens3,
+//   name: 'DAAD Scholarship - منحة الـ دااد',
+//    description: 'DAAD Scholarship - منحة الـ دااد',
+//     url: 'https://t.me/EduLens_Podcast/15', 
+// },
+// {
+//   img:lens4,
+//   name: 'Erasmus Mundus Scholarship - منحة إيراسموس موندوس',
+//   description: 'Erasmus Mundus Scholarship - منحة إيراسموس موندوس',
+//   url: 'https://t.me/EduLens_Podcast/20',
+//   }
+// ]
 
 
 const lensnumtitle='EduLens in Numbers';
 const numoption = [
-  {title:"Episodes", num: 13},
-  {title: "Hours of Content", num: 13}
+  {title:"Episodes", num: 15},
+  {title: "Hours of Content", num: 15}
 ];
 
   return (
 
     <>
         <Landing data={lensdata}/>
-        <Educard edudata={edudata}/>
+        <Educard/>
         <Numbers  title={lensnumtitle} numoptions={numoption}/>
 
       

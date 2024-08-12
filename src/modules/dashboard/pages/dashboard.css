@@ -1,0 +1,37 @@
+.dashboard-container {
+    padding: 2em 3em;
+    background-color:#ededed;
+}
+
+.dateline {
+    font-size:1.3em;
+    font-weight:700;
+    margin:1em 0;
+}
+
+.day {
+    color: var(--main-color);
+}
+
+.date {
+    color:#CBCBCB;
+}
+
+.charts {
+    display:flex;
+    justify-content:space-between;
+    margin:2em 0;
+    flex-wrap:wrap;
+    gap:1em;
+}
+
+
+
+.dashboard-header {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:50px;
+    margin:3em 0 1em 0;
+}
+

@@ -15,7 +15,7 @@ const Footer = () => {
       <div className="container">
 
         <div className="box">
-            <img src={logo} alt="" />
+            <Link to="/"><img src={logo} alt="" /></Link>
             <a href="mailto:info@edu-bridge.org.uk">info@edu-bridge.org.uk</a>
             <ul className='social'> 
               <Link to={"https://www.facebook.com/share/7BUHBUWxU951ac6Y/?mibextid=qi2Omg"}><FaFacebookF/></Link>

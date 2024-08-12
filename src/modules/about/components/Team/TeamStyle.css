@@ -20,6 +20,15 @@
     justify-content: center;
     align-items: center
 }
+@media (max-width:768px) {
+    .Team .team-content{
+        margin-left: 100px;
+        width: 100%;
+
+    }
+   
+}
+
 .teamcard {
     text-align: center;
     padding: 30px 10px;
@@ -86,4 +95,11 @@
     font-family: "Font Awesome 5 Free" !important;
     opacity: 1000 !important;
     font-size: 33px !important;
+}
+
+@media (max-width:768px) {
+    .team-content ul.slick-dots {
+        left:-80px;
+    }
+   
 }

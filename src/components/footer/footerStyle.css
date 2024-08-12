@@ -5,7 +5,7 @@
 }
 @media (max-width:768px) {
     .footer{
-        height: 780px;
+        height: 770px;
     }
 }
 .footer .container{
@@ -13,6 +13,13 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+@media (max-width:768px) {
+    .footer .container{
+        display: flex;
+        flex-direction: column;
+
+    }
 }
 
 .footer .box{
@@ -30,7 +37,6 @@
 }
 .footer .box a{
     color: #FFFFFF;
-    margin-top: 40px;
 }
 @media (max-width:768px) {
     .footer .box a{

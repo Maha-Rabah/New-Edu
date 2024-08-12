@@ -1,0 +1,61 @@
+//header
+
+
+.dashboard-header-title {
+    font-size:1.6em;
+}
+
+.dashboard-header-addbtn {
+    font-size:1.1em;
+    padding:0.3em;
+    background-color:var(--main-color);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    gap:0.3em;
+    cursor:pointer;
+}
+
+//table
+
+.table-container {
+    max-height: 350px; /* Set the maximum height for the table container */
+    overflow-y: auto;  /* Enable vertical scrolling if needed */
+  }
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .custom-table th,
+  .custom-table td {
+    padding: 8px;
+    text-align: left;
+  }
+
+  .custom-table thead th {
+    background-color: #f4f4f4;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4); /* Optional: Add shadow for better visibility */
+  }
+  
+  .custom-table thead {
+    background-color: #f4f4f4;
+  }
+  
+  .custom-table tr {
+    border-bottom: 2px solid #ddd; /* Only border under each row */
+  }
+  
+  .custom-table a {
+    color: blue;
+    text-decoration: none;
+  }
+
+  .flex-icons a {
+    margin-left:0.3em;
+  }
+  

@@ -17,7 +17,7 @@ const Main = () => {
 const landingdata={
   homepic:homepic,
   title:'From Syrians To Syrians',
-  desc:'We envision a generation of Syrian youth empowered to overcome challenges and become key contributors in shaping a brighter future for Syria and the world.',
+  desc:'We envision a generation of Syrian youth empowered by educationto to overcome challenges and become key contributors in shaping a brighter future for Syria and the world.',
   button:'Get to know us',
   true:true,
 }
@@ -29,18 +29,18 @@ const landingdata={
     {
         color:'green',
         name:"EduMentoring",
-        about:'An academic mentorship program',
+        about:'Academic mentorship project',
         programname:'/edumentoring'
     },
     {
       color:'yellowcard',
       name:"EduLens",
-      about:'A series of podcast episodes',
+      about:'Series of podcast episodes',
       programname:'edulens'
   },
     {   color:'pink',
         name:"EduCounseling",
-        about:'A Counseling program for individuals currently applying for scholarships',
+        about:'Counseling project for individuals currently applying for scholarships',
         programname:'/educounseling'
     },
 
@@ -51,7 +51,7 @@ const numoption = [
   {title : "Applicants", num : 200 },
   {title : "Interviews", num : 45 },
   {title : "Mentees", num : 18 },
-  {title : "Episodes", num : 11 },
+  {title : "Episodes", num : 15 },
 ];
 const bridgetitle =' EduBridge in Numbers';
 

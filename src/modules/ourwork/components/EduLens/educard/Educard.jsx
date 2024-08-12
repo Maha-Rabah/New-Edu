@@ -7,7 +7,7 @@ import yellow from '../../../../../assets/yellow.svg'
 
 
 
-const Educard = ({edudata}) => {
+const Educard = () => {
 
   const settings = {
     dots: true,
@@ -41,18 +41,18 @@ const Educard = ({edudata}) => {
   };
 
 
-  // const [edudata, setEdudata] = useState([]);
+  const [edudata, setEdudata] = useState([]);
 
-  //     useEffect(() => {
-  //   fetch("https://api.edu-bridge.org.uk/episodes")
-  //     .then((response) => {
-  //       return response.json();
-  //     })
-  //     .then((edudata) => {
-  //       console.log(edudata.data)
-  //       setEdudata(edudata.data);
-  //     });
-  // }, []);
+      useEffect(() => {
+    fetch("https://api.edu-bridge.org.uk/episodes")
+      .then((response) => {
+        return response.json();
+      })
+      .then((edudata) => {
+        console.log(edudata.data)
+        setEdudata(edudata.data);
+      });
+  }, []);
 
   return (
     <div className='educards'>
