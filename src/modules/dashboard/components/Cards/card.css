@@ -1,51 +1,34 @@
-.chart{
-    width: 300px;
-    position:relative;
-    border-radius:5%;
+/* card.css */
+.chart {
+    width: 100%;
+    max-width: 300px; 
+    position: relative;
+    border-radius: 5%;
+    margin: 0 auto; 
 }
 
 .chart img {
-    width:100%;
-    border-radius:5%;
+    width: 100%;
+    border-radius: 5%;
 }
 
-.chart-desc {
-    position:absolute;
-    top:15%;
-    left:10%;
-    font-size:1.4em;
-    display:flex;
+.chart-desc, .chart-desc-w {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    font-size: 1.4em;
+    display: flex;
     flex-direction: column;
-    gap:0.5em;
-    font-weight:bold;
+    gap: 0.5em;
+    font-weight: bold;
 }
 
-.chart-desc-title {
-    color:#fff;
-}
+@media (max-width: 768px) {
+    .chart-desc, .chart-desc-w {
+        font-size: 1em;
+    }
 
-.chart-desc-num {
-    color:#fff;
-    font-size:1.2em;
-}
-
-
-.chart-desc-w {
-    position:absolute;
-    top:15%;
-    left:10%;
-    font-size:1.4em;
-    display:flex;
-    flex-direction: column;
-    gap:0.5em;
-    font-weight:bold;
-}
-
-.chart-desc-title-w {
-    color:var(--main-color);
-}
-
-.chart-desc-num-w {
-    color:#000;
-    font-size:1.2em;
+    .chart-desc-num, .chart-desc-num-w {
+        font-size: 1em;
+    }
 }
