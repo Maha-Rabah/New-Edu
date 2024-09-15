@@ -64,7 +64,6 @@ const Navbar = () => {
                     <ul className='nav-items'>
                       <li><NavLink to="/" onClick={() => setMenuOpened((prev)=> !prev)}>Home</NavLink></li>
                       <li><NavLink to="about" onClick={() => setMenuOpened((prev)=> !prev)}>About</NavLink></li>
-                      <li><NavLink to="dashboard" onClick={() => setMenuOpened((prev)=> !prev)}>Dashbourd</NavLink></li>
                       <li className='dropdown' ref={dropdownRef}>
                         <div className="dropdown-btn" onClick={toggleDropdown}>
                           <span>Our Work </span>
@@ -79,7 +78,7 @@ const Navbar = () => {
                         </ul>
                       </li>
                       <li><NavLink to="joinus" onClick={() => setMenuOpened((prev)=> !prev)}>Join Us</NavLink></li>
-                      <li><NavLink to="contuct" onClick={() => setMenuOpened((prev)=> !prev)}>Contuct Us</NavLink></li>
+                      <li><NavLink to="contuct" onClick={() => setMenuOpened((prev)=> !prev)}>Contact Us</NavLink></li>
 
                     </ul>
 

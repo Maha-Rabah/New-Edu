@@ -43,7 +43,7 @@ const Team = () => {
   const [teamdata, setTeamdata] = useState([]);
 
   useEffect(() => {
-    fetch("https://api.edu-bridge.org.uk/edu-bridges-team")
+    fetch("http://13.50.253.237:3013/edu-bridges-team")
       .then((response) => {
         return response.json();
       })
