@@ -1,4 +1,3 @@
-//header
 
 
 .dashboard-header-title {
@@ -16,7 +15,6 @@
     cursor:pointer;
 }
 
-//table
 
 .table-container {
     max-height: 350px; /* Set the maximum height for the table container */
