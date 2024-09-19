@@ -8,7 +8,8 @@ import Numbers from '../components/Numbers/Numbers';
 import con3 from '../../main/assets/con3.svg'
 import con2 from '../../main/assets/con2.svg'
 import con1 from '../../main/assets/con1.svg'
-import homepic from '../assets/landing.png'
+// import homepic from '../assets/landing.png'
+import homepic from '../assets/landingReduced.png'
 
 
 const Main = () => {

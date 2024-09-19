@@ -6,6 +6,8 @@ import Navbar from './components/navbar/navbar'
 import Footer from './components/footer/footer'
 import './index.css'
 
+
+
 function App() {
 
   return (
