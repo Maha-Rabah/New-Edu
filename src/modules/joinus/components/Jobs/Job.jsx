@@ -7,7 +7,8 @@ import Ui_ux from './UiUx/ui_ux';
 import Marketing from './Marketing/Marketing';
 import Graphic from './Graphic/Graphic';
 import Video from './Video/Video';
-
+import Executive from './Executive/executive';
+import Hr from './HR/hr'
 
 
 const Job = ({jobdescs}) => {
@@ -86,6 +87,32 @@ const Job = ({jobdescs}) => {
                         <div onClick={toggleModal} className="overlay"></div>
                              <div className="modal-content">
                                 <Video />
+
+                                <button onClick={toggleModal} className="close-modal">
+                                    CLOSE
+                                </button>
+                        </div>
+                    </div>
+                        )}   
+
+                         {modal && job === "HR Assistant" &&(
+                    <div className="modal">
+                        <div onClick={toggleModal} className="overlay"></div>
+                             <div className="modal-content">
+                                <Hr />
+
+                                <button onClick={toggleModal} className="close-modal">
+                                    CLOSE
+                                </button>
+                        </div>
+                    </div>
+                        )}   
+
+                         {modal && job === "Executive Assistant" &&(
+                    <div className="modal">
+                        <div onClick={toggleModal} className="overlay"></div>
+                             <div className="modal-content">
+                                <Executive />
 
                                 <button onClick={toggleModal} className="close-modal">
                                     CLOSE

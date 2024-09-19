@@ -1,8 +1,8 @@
 import React, { useEffect, useState }from 'react'
 import './Educard.css'
 import Slider from 'react-slick';
-
-
+import { FaTelegram } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
 import yellow from '../../../../../assets/yellow.svg'
 
 
@@ -44,13 +44,13 @@ const Educard = () => {
   const [edudata, setEdudata] = useState([]);
 
       useEffect(() => {
-    fetch("https://api.edu-bridge.org.uk/episodes")
+    fetch("http://13.50.253.237:3013/episodes")
       .then((response) => {
         return response.json();
       })
       .then((edudata) => {
-        console.log(edudata.data)
-        setEdudata(edudata.data);
+        console.log(edudata)
+        setEdudata(edudata);
       });
   }, []);
 
@@ -58,13 +58,17 @@ const Educard = () => {
     <div className='educards'>
         <img src={yellow} alt="" className='lenyelllow' />
         <Slider {...settings} className='container'>
-        {edudata.length && edudata?.map(function (item) {
+        {edudata.map(function (item) {
                 return (
                   <>
-                  <a href={item.url} className='lenscard' key={item.id}>
-                      <img src={item.img } alt="" />
+                  <div className='lenscard'>
+                      <img src={item.image} alt="" />
                     <div className='lensname'>{item.name}</div>
-                   </a>
+                    <div className='episodes'>
+                        <a href={item.url_youtube}><FaYoutube className='iconlens you'/></a>
+                        <a href={item.url_telegram}><FaTelegram className='iconlens tele'/></a>
+                    </div>
+                   </div>
                   </>
                 );
             })}

@@ -20,14 +20,8 @@
     justify-content: center;
     align-items: center
 }
-@media (max-width:768px) {
-    .Team .team-content{
-        margin-left: 100px;
-        width: 100%;
 
-    }
-   
-}
+
 
 .teamcard {
     text-align: center;
@@ -41,7 +35,44 @@
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     margin-bottom: 20px;
-    height: 315px;
+    transition:all 0.3s;
+    -webkit-transition:all 0.3s;
+    -moz-transition:all 0.3s;
+    -ms-transition:all 0.3s;
+    -o-transition:all 0.3s;
+}
+.teamcard:hover{
+    box-shadow: 0 2px 15px rgb(0 0 0 / 40%);
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
+.teamcard .infoteam{
+    color: var(--main-color);
+    font-weight: bold;
+    padding: 20px 10px 0px;
+    border-top: 1px solid #E6e6e7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.infoteam a{
+    color: var(--main-color);
+    font-size: 22px;
+}
+.teamcard:hover .infoteam a{
+    animation: move 0.4s linear infinite;
+}
+@keyframes move {
+    100%{
+        transform: translateX(10px);
+        -webkit-transform: translateX(10px);
+        -moz-transform: translateX(10px);
+        -ms-transform: translateX(10px);
+        -o-transform: translateX(10px);
+}
 }
 .teamcard .picture {
     display: flex;
@@ -74,10 +105,10 @@
     color: var(--main-color) !important;
 }
 
-.team-content ul.slick-dots {
+ul.slick-dots {
     bottom: -40px;
 }
-.team-content .slick-arrow.slick-next{
+.slick-arrow.slick-next{
     background-color: var(--main-color) !important;
     color: white;
     font-weight: bold;
@@ -89,17 +120,12 @@
     -ms-border-radius: 50% !important;
     -o-border-radius: 50% !important;
 }
-
+.slick-next {
+    right: -65px !important;
+}
 
 .slick-next::before{
     font-family: "Font Awesome 5 Free" !important;
     opacity: 1000 !important;
     font-size: 33px !important;
-}
-
-@media (max-width:768px) {
-    .team-content ul.slick-dots {
-        left:-80px;
-    }
-   
 }

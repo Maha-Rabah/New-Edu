@@ -28,7 +28,10 @@ const valuedata=[{
     {pos: "Graphic Design" , time: "5-7 hours/week", lastday: "Open till filled!", career: "Editing Team", job_info: "bla bla"},
     {pos: "Video Editor" , time: "5-7 hours/week", lastday: "Open till filled!", career: "Editing Team", job_info: "bla bla2"},
     {pos: "UI/ UX" , time: "7-10 hours/week", lastday: "Open till filled!", career: "IT Team", job_info: "bla bla3"},
-    {pos: "Communication Manager" , time: "5-7 hours/week", lastday: "Open till filled!", career: "Administration Team", job_info: "bla bla4"}
+    {pos: "Communication Manager" , time: "5-7 hours/week", lastday: "Open till filled!", career: "Administration Team", job_info: "bla bla4"},
+    {pos: "HR Assistant" , time: "7-10 hours/week", lastday: "Open till filled!", career: "Administration Team", job_info: "bla bla5"},
+    {pos: "Executive Assistant" , time: "7-10 hours/week", lastday: "Open till filled!", career: "Administration Team", job_info: "bla bla6"},
+
   ]
 ////////////////////////////////////////////////
 
