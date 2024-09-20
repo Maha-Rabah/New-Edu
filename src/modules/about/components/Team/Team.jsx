@@ -42,6 +42,28 @@ const Team = () => {
 
   const [teamdata, setTeamdata] = useState([]);
 
+  const [selectedCard, setSelectedCard] = useState(null)
+
+  const [showPopup, setShowPopup] = useState(false);
+
+  const handleCardClick = (card) => {
+    setSelectedCard(card);
+    setShowPopup(true);
+    console.log(card);
+    
+  }
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+    setSelectedCard(null)
+  }
+
+  if(showPopup) {
+    document.body.style.overflowY= "hidden"
+} else {
+    document.body.style.overflowY = "scroll"
+      }
+
 
 
   useEffect(() => {
@@ -73,15 +95,43 @@ const Team = () => {
                         <p>{item.position}</p>
                       </div>
                       <div className='infoteam'>
-                        <p>Read More</p>
-                        <a href="#"><FaLongArrowAltRight/></a>
+                        <div className="infoteam-button-container"  onClick={() => handleCardClick(item)}>
+                          <p className='infoteam-readmore'>About</p>
+                          <span className='infoteam-arrow'>→</span>
+                        </div>
                       </div>
                   </div>
                 );
             })}
             </Slider>
+
+            {
+              showPopup && selectedCard && (
+                <div className="team-card-popup">
+                  <div className="team-card-popup-content">
+                    <span className='close-popup' onClick={handleClosePopup}>
+                      <div className="close-popup-btn">
+                        &times;
+                      </div>
+                    </span>
+                    <div className="team-card-popup-container">
+                      <img src={selectedCard.image} className='popup-img' alt="pic" />
+                      <div className="team-card-popup-container-title">
+                        <p className='team-card-popup-container-title_name'>{selectedCard.name}</p>
+                        <p className='team-card-popup-container-title_position'>{selectedCard.position}</p>
+                      </div>
+                    </div>
+                    <div className="team-card-popup-container-info">
+                      <p>{selectedCard.information}</p>
+                    </div>
+                  </div>
+                </div>
+              )
+            }
+
             
             </div>
+
 
         <div className="but">
             
