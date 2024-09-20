@@ -94,9 +94,11 @@ const Team = () => {
                       <div className='caption'>
                         <p>{item.position}</p>
                       </div>
-                      <div className='infoteam' onClick={() => handleCardClick(item)}>
-                        <p>Read More</p>
-                        <p className='infoteam-arrow'><FaLongArrowAltRight/></p>
+                      <div className='infoteam'>
+                        <div className="infoteam-button-container"  onClick={() => handleCardClick(item)}>
+                          <p className='infoteam-readmore'>About</p>
+                          <span className='infoteam-arrow'>→</span>
+                        </div>
                       </div>
                   </div>
                 );

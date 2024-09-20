@@ -50,28 +50,41 @@
     -ms-transform: translateY(-10px);
     -o-transform: translateY(-10px);
 }
-.teamcard .infoteam{
-    color: var(--main-color);
-    font-weight: bold;
-    padding: 20px 10px 0px;
-    border-top: 1px solid #E6e6e7;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor:pointer;
-}
-.infoteam a{
-    color: var(--main-color);
-    font-size: 22px;
-}
-.teamcard .infoteam .infoteam-arrow:hover{
-    animation: move 0.4s ease-in-out infinite;
+
+.teamcard .infoteam {
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 
+.teamcard .infoteam-button-container {
+    display:flex;
+    gap:0.4em;
+    background-color:var(--main-color);
+    padding:0.4em 1.3em;
+    color:#fff;
+    border-radius:12px;
+    align-items:center;
+    cursor:pointer;
+}
+
+.teamcard .infoteam{
+
+    padding:0.5em 1em;
+    font-size:0.9em;
+}
+
+.teamcard .infoteam-readmore {
+    padding:0 0.4em;
+}
+
+
+
 .infoteam-arrow {
-    color: var(--main-color);
-    font-size:1.2em;
-    padding-left:50%;
+    font-size:0.9em;
+    font-weight:700;
+    color:#fff;
 }
 
 @keyframes move {
