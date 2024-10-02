@@ -1,6 +1,3 @@
-import React from 'react'
-import './eduMentoring.css'
-import { useState } from 'react'
 import Landing from '../../../main/components/landing/Landing.jsx'
 import Numbers from '../../../main/components/Numbers/Numbers.jsx'
 import Cohort from './Cohort/Cohort.jsx'
@@ -13,21 +10,15 @@ import mentpic from '../../assets/mentopic.png'
 
 const EduMentoring = () => {
   
+
+  //////////////////data/////////////////////
   const mendata={
     homepic:mentpic,
     title:'EduMentoring program',
     desc:'A mentoring program to support Syrian students in their pursuit of higher education abroad through mentoring and financial support.'
   }
 
-   ////////////////////////////////////////////////////////////////
-   const mentnumber = [200, 45, 18, 6]
-    const mentoption = [
-      {title:"Applicants", num: 200},
-      {title: "Interviews", num: 45},
-      {title: "Mentees", num: 18},
-      {title: "Mentors", num: 6}];
-    const mentonumtitle= "EduMentoring in Numbers";
-   //////////////////////////////////////////////////////////////////
+  const mentonumtitle= "EduMentoring in Numbers";
 
 const featuredata=[
   {
@@ -52,7 +43,7 @@ caption:'Bi-weekly mentoring sessions to secure scholarships with expert mentors
     <div >
       <Landing data={mendata}/>
       <Features featurecard={featuredata} featuretit={true}/>
-      <Numbers  title={mentonumtitle} numoptions={mentoption}/>
+      <Numbers  title={mentonumtitle} type="EduMentoring"/>
       <Cohort/>
 
 

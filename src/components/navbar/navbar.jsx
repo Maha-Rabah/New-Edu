@@ -9,9 +9,8 @@ import { FaBars } from 'react-icons/fa';
 const Navbar = () => {
   const [menuOpened, setMenuOpened] = useState(false);
 
-  // other links menu
     const dropdownRef = useRef(null);
-  
+    
     useEffect(() => {
       const handleClickOutside = (event) => {
         if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -26,50 +25,30 @@ const Navbar = () => {
       };
     }, []);
   
-
-
-  ///////////////////////////////
+  ///////////////////////////////////////////
   const [isOpen, setIsOpen]= useState(false);
 
   function toggleDropdown() {
       setIsOpen(!isOpen);
   }
 
-  const ref = useRef(false);
-
-  const updateRef = () => {
-    ref.current = false;
-  };
-
-  useEffect(() => {
-    const handleClick = () => {
-      updateRef();
-    };
-
-    document.addEventListener('click', handleClick);
-
-    return () => {
-      document.removeEventListener('click', handleClick);
-    };
-  }, []);
   return (
-    <nav className='navs' 
-    >
+    <nav className='navs'>
+
       <div className="container bottom-nav">
         <Link to="/" className="logo">
           <img src={logo} alt="" />
         </Link>
-         <div>
+
+            <div>
                 <div className={(menuOpened) ? 'containt active' : 'containt'} >
                     <ul className='nav-items'>
                       <li><NavLink to="/" onClick={() => setMenuOpened((prev)=> !prev)}>Home</NavLink></li>
                       <li><NavLink to="about" onClick={() => setMenuOpened((prev)=> !prev)}>About</NavLink></li>
+
                       <li className='dropdown' ref={dropdownRef}>
                         <div className="dropdown-btn" onClick={toggleDropdown}>
                           <span>Our Work </span>
-                        {/* {
-                          isOpen? (<BiUpArrow/>):(<BiDownArrow/>)
-                        } */}
                         </div>
                         <ul className={isOpen ? "dropdown-content active" :"dropdown-content"} onClick={toggleDropdown}>
                           <li><NavLink to={"edumentoring"} onClick={() => setMenuOpened((prev)=> !prev)}>EduMentoring</NavLink></li>

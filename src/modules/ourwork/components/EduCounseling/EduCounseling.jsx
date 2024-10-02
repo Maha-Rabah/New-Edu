@@ -22,11 +22,11 @@ const EduCounseling = () => {
   
   /////////////////////////////////////////////////
 
-  const numoption = [
-    {title: "Counseling sessions", num: 9},
-    {title: "Essays revieweds", num: 3},
-    {title: "Mock interviews", num: 2},
-    ];
+  // const numoption = [
+  //   {title: "Counseling sessions", num: 9},
+  //   {title: "Essays revieweds", num: 3},
+  //   {title: "Mock interviews", num: 2},
+  //   ];
   const contitle =['EduCounseling in Numbers']
   
   ////////////////////////////////////////////////////
@@ -61,7 +61,7 @@ const EduCounseling = () => {
     <>
         <Landing data={coundata}/>
          <Features featurecard={featuredata} featuretit={false} buttoncard={'Apply'}/>
-        <Numbers  title={contitle} numoptions={numoption}/>
+        <Numbers  title={contitle} type="EduCounseling"/>
     </>
   )
 }

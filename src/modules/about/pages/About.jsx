@@ -8,7 +8,6 @@ import icon3 from '../assets/icon3.svg'
 import icon4 from '../assets/icon4.svg'
 import icon5 from '../assets/icon5.svg'
 import icon6 from '../assets/icon6.svg'
-// import pic1 from '../assets/MohamadAmino.png'
 
 
 
@@ -43,7 +42,7 @@ const valuedata=[{
 
 const About = () => {
   useEffect(() => { window.scrollTo(0, 0) }, [])
-
+  
   return (
     <div>
       <Vision/>

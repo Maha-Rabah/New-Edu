@@ -71,17 +71,17 @@ const EduLens = () => {
 
 
 const lensnumtitle='EduLens in Numbers';
-const numoption = [
-  {title:"Episodes", num: 15},
-  {title: "Hours of Content", num: 15}
-];
+// const numoption = [
+//   {title:"Episodes", num: 15},
+//   {title: "Hours of Content", num: 15}
+// ];
 
   return (
 
     <>
         <Landing data={lensdata}/>
         <Educard />
-        <Numbers  title={lensnumtitle} numoptions={numoption}/>
+        <Numbers  title={lensnumtitle} type="EduLens"/>
 
       
     </> 

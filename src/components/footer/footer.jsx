@@ -6,23 +6,22 @@ import { BsTelegram } from "react-icons/bs";
 import { Link ,NavLink } from 'react-router-dom';
 import logo from '../../assets/logo.svg'
 
-/////////////////////////////////////////////////////////////
 
-/////////////////////////////////////////////////////////////
 const Footer = () => {
   return (
     <div className='footer'>
+
       <div className="container">
 
         <div className="box">
             <Link to="/"><img src={logo} alt="" /></Link>
             <a href="mailto:info@edu-bridge.org.uk">info@edu-bridge.org.uk</a>
             <ul className='social'> 
-              <Link to={"https://www.facebook.com/share/7BUHBUWxU951ac6Y/?mibextid=qi2Omg"}><FaFacebookF/></Link>
-              <Link to={"https://www.instagram.com/edu.bridge.sy"}><FaInstagram/></Link>
-              <Link to={"https://www.linkedin.com/company/edubridge2024"}><FaLinkedinIn/></Link>
-              <Link to={"https://youtube.com/@edu.bridge.sy.?si=HpwWOaJPbz0mOrWI"}><FaYoutube /></Link>
-              <Link to={"https://t.me/EduLens_Podcast"}><BsTelegram /></Link>
+              <Link to={"https://facebook.com/EduBridge.Organization"}><FaFacebookF/></Link>
+              <Link to={"https://instagram.com/edubridge.organization"}><FaInstagram/></Link>
+              <Link to={"https://www.linkedin.com/company/edubridge-organization"}><FaLinkedinIn/></Link>
+              <Link to={"https://youtube.com/@EduBridge.Organization"}><FaYoutube /></Link>
+              <Link to={"https://t.me/EduBridge_Organization"}><BsTelegram /></Link>
             </ul>
         </div>
         
@@ -38,10 +37,11 @@ const Footer = () => {
             </ul>
           </li>
           <li><NavLink to="joinus">Join Us</NavLink></li>
-          <li><NavLink to="contuct">Contuct Us</NavLink></li>
+          <li><NavLink to="contuct">Contact Us</NavLink></li>
         </ul>
 
       </div>
+
     </div>
   )
 }

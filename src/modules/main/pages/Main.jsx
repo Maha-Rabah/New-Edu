@@ -13,17 +13,16 @@ import homepic from '../assets/landing.png'
 
 const Main = () => {
 
-////////////////////////////landing/////////////////////////
+////////////////////////////DATA/////////////////////////
 const landingdata={
-  homepic:homepic,
-  title:'From Syrians To Syrians',
-  desc:'We envision a generation of Syrian youth empowered by educationto to overcome challenges and become key contributors in shaping a brighter future for Syria and the world.',
-  button:'Get to know us',
-  true:true,
+    homepic:homepic,
+    title:'From Syrians To Syrians',
+    desc:'We envision a generation of Syrian youth empowered by educationto to overcome challenges and become key contributors in shaping a brighter future for Syria and the world.',
+    button:'Get to know us',
+    true:true,
 }
-  ////////////////////////////////////////////////////////
 
-  ///////////////Programs/////////////////////////////////
+  /////Programs Data
   const progdata= [
 
     {
@@ -45,17 +44,10 @@ const landingdata={
     },
 
   ]
-/////////////////////////////////////////////////////////////
 
-const numoption = [
-  {title : "Applicants", num : 200 },
-  {title : "Interviews", num : 45 },
-  {title : "Mentees", num : 18 },
-  {title : "Episodes", num : 15 },
-];
 const bridgetitle =' EduBridge in Numbers';
 
-////////////////////////////////////////////////////
+
 const contrimage=[
   {
     img: con3,
@@ -67,12 +59,13 @@ const contrimage=[
     img:con1,
   },
 ]
+///////////////////////////////////////////////////////////
 
   return (
     <div>
       <Landing data={landingdata}/>
       <ProgramCards programcard={progdata}/>
-      <Numbers  title={bridgetitle} numoptions={numoption}/>
+      <Numbers title={bridgetitle} type="Home"/>
       <Contribution conticard={contrimage}/>
     </div>
   )

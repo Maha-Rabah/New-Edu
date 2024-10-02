@@ -6,7 +6,6 @@ import sy from '../assets/syria.svg'
 import yellow from '../../../assets/yellow.svg'
 import roze from '../../../assets/roze.svg'
 import dot from '../assets/dot.svg'
-import axios from 'axios'
 import axiosInstance from '../../../utlis/axios'
 
 const Contuct= () => {

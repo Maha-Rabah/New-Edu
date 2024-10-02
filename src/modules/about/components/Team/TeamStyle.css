@@ -1,4 +1,5 @@
 .Team {
+    position:relative;
     padding-top: var(--main-padding);
     padding-bottom: var(--main-padding);
 }
@@ -49,22 +50,43 @@
     -ms-transform: translateY(-10px);
     -o-transform: translateY(-10px);
 }
+
+.teamcard .infoteam {
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.teamcard .infoteam-button-container {
+    display:flex;
+    gap:0.4em;
+    background-color:var(--main-color);
+    padding:0.4em 1.3em;
+    color:#fff;
+    border-radius:12px;
+    align-items:center;
+    cursor:pointer;
+}
+
 .teamcard .infoteam{
-    color: var(--main-color);
-    font-weight: bold;
-    padding: 20px 10px 0px;
-    border-top: 1px solid #E6e6e7;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+    padding:0.5em 1em;
+    font-size:0.9em;
 }
-.infoteam a{
-    color: var(--main-color);
-    font-size: 22px;
+
+.teamcard .infoteam-readmore {
+    padding:0 0.4em;
 }
-.teamcard:hover .infoteam a{
-    animation: move 0.4s linear infinite;
+
+
+
+.infoteam-arrow {
+    font-size:0.9em;
+    font-weight:700;
+    color:#fff;
 }
+
 @keyframes move {
     100%{
         transform: translateX(10px);
@@ -128,4 +150,94 @@ ul.slick-dots {
     font-family: "Font Awesome 5 Free" !important;
     opacity: 1000 !important;
     font-size: 33px !important;
+}
+
+.team-card-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-card-popup-content {
+    width:40%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.close-popup-btn {
+    font-size: 2.5em;
+    font-weight:bold;
+    color: var(--main-color);
+    text-shadow: 1px 1px 3px var(--second-color);
+    animation: closebtn 0.7s ease-in-out 1;
+}
+
+.popup-img {
+    width:250px;
+    height:250px;
+    border-radius:20px;
+}
+
+.team-card-popup-container {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.team-card-popup-container-title {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:100%;
+    justify-content:center;
+    gap:1em;
+}
+
+.team-card-popup-container-title_name {
+    color:var(--main-color);
+    font-weight:bold;
+    font-size:1.5em;
+    padding:0.3em 0.7em;
+    background-color: #E5E3E3;
+    border-radius:30px;
+}
+
+.team-card-popup-container-title_position {
+    color:#000;
+    font-weight:bold;
+    font-size:1.2em;
+    padding:0.3em 0.7em;
+}
+
+.team-card-popup-container-info {
+    margin-top:1.5em;
+    font-weight:700;
+    line-height:1.45;
+}
+
+@keyframes closebtn {
+    from {
+        transform:scale(0);
+        opacity:0;
+    }
+    to {
+        transform:scale(1);
+        opacity:1;
+    }
 }

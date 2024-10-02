@@ -11,20 +11,19 @@ const ProgramCards = ({programcard}) => {
                 return (
                   <>
                     <div className= {`${item.color}`}>
-
-                <div className="progcard">
-                        <h3 className='cardname'>{item.name}</h3>
-                        <p className='aboutcard'>{item.about}</p>
-                        <div className='learnmore'>
-                        <div>
-                            <Link to={item.programname}>
-                            Learn more
-                          <i><IoArrowForwardCircleOutline /></i>
-                          </Link>
-                       </div>
+                        <div className="progcard">
+                            <h3 className='cardname'>{item.name}</h3>
+                            <p className='aboutcard'>{item.about}</p>
+                            <div className='learnmore'>
+                              <div>
+                                  <Link to={item.programname}>
+                                  Learn more
+                                <i><IoArrowForwardCircleOutline /></i>
+                                </Link>
+                              </div>
+                            </div>
                         </div>
                     </div>
-                </div>
                   </>
                 );
             })}
