@@ -18,25 +18,28 @@ const valuedata=[{
     caption:"Giving back to the community",
   },
   {
+    icon:icon6,
+    caption:"Transparency",
+  },
+  {
     icon:icon2,
     caption:"Sustainability",
-  },
-  {
-    icon:icon3,
-    caption:"Equity",
-  },
-  {
-    icon:icon4,
-    caption:"Integrity & Authenticity",
   },
   {
     icon:icon5,
     caption:"Accountability",
   },
   {
-    icon:icon6,
-    caption:"Transparency",
+    icon:icon4,
+    caption:"Integrity & Authenticity",
   },
+  {
+    icon:icon3,
+    caption:"Equity",
+  },
+
+
+
 ]
 
 

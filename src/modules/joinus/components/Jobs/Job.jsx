@@ -9,6 +9,7 @@ import Graphic from './Graphic/Graphic';
 import Video from './Video/Video';
 import Executive from './Executive/executive';
 import Hr from './HR/hr'
+import { FaArrowRight } from 'react-icons/fa';
 
 
 const Job = ({jobdescs}) => {
@@ -39,7 +40,7 @@ const Job = ({jobdescs}) => {
                 <div className="joinUs-op-job" >
                     <div className="firstline">
                         <p>{item.career}</p>
-                        <a href="#" className='job-desc' onClick={() => toggleModal(item.pos)} >Job Description <span style={{textShadow:"0.5px 0.5px 0px gray"}}>→</span></a>
+                        <a href="#" className='job-desc' onClick={() => toggleModal(item.pos)} >Job Description <span><FaArrowRight /></span></a>
                         
                     </div>
 

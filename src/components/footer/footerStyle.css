@@ -1,7 +1,7 @@
 .footer{
     width: 100%;
     background-color: var(--main-color);
-    height: 400px;
+    height: 250px;
 }
 @media (max-width:768px) {
     .footer{
