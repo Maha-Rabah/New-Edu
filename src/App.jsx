@@ -1,5 +1,4 @@
 import { Outlet } from 'react-router-dom'
-import {useEffect} from 'react'
 import './App.css'
 import { Toaster } from 'react-hot-toast';
 import Navbar from './components/navbar/navbar'

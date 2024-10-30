@@ -1,8 +1,8 @@
-import React,{useEffect} from 'react'
+import {useEffect} from 'react'
 import './joinUs.css'
 import notebook from '../assets/notebook.svg'
 import linkedin from '../assets/linkedin.svg'
-import Job from '../components/Jobs/Job.jsx'
+import Jobs from '../components/Jobs/Jobs.jsx'
 import Values from '../../about/components/Values/Values.jsx'
 import icon1 from '../assets/jicon1.svg'
 import icon2 from '../assets/jicon2.svg'
@@ -22,17 +22,10 @@ const valuedata=[{
   {
     icon:icon3,
     caption:"Create global connections",
-  },]
+  },
+]
 
-  const jobdesc = [
-    {pos: "Graphic Design" , time: "5-7 hours/week", lastday: "Open till filled!", career: "Editing Team", job_info: "bla bla"},
-    {pos: "Video Editor" , time: "5-7 hours/week", lastday: "Open till filled!", career: "Editing Team", job_info: "bla bla2"},
-    {pos: "UI/ UX" , time: "7-10 hours/week", lastday: "Open till filled!", career: "IT Team", job_info: "bla bla3"},
-    {pos: "Communication Manager" , time: "5-7 hours/week", lastday: "Open till filled!", career: "Administration Team", job_info: "bla bla4"},
-    {pos: "HR Assistant" , time: "7-10 hours/week", lastday: "Open till filled!", career: "Administration Team", job_info: "bla bla5"},
-    {pos: "Executive Assistant" , time: "7-10 hours/week", lastday: "Open till filled!", career: "Administration Team", job_info: "bla bla6"},
 
-  ]
 ////////////////////////////////////////////////
 
 const JoinUs = () => {
@@ -53,9 +46,9 @@ const JoinUs = () => {
             </div>
 
             <div className='joinbox'>
-              <Job jobdescs={jobdesc}/>
+              <Jobs />
             </div>
-            
+
             <div className="cta-linkedin">
                 <a href="https://www.linkedin.com/company/edubridge2024" alt="linked in button">
                     <img src={linkedin} alt="linked in logo" /><span>Follow us on Linkedin</span>
@@ -75,8 +68,6 @@ const JoinUs = () => {
         <Values valuecard={valuedata}/>
     </div>
     <img src={blue} alt="" className='bluejoin'/>
-
-
     </div>
   )
 }
