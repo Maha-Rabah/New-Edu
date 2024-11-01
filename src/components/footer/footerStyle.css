@@ -1,11 +1,11 @@
 .footer{
     width: 100%;
     background-color: var(--main-color);
-    height: 400px;
+    padding:1em 0;
 }
 @media (max-width:768px) {
     .footer{
-        height: 770px;
+        padding:1em 0 4em 0;
     }
 }
 .footer .container{
@@ -32,7 +32,7 @@
 }
 @media (max-width:768px) {
     .footer .box img{
-        width: 180px;;
+        width: 180px;
     }
 }
 .footer .box a{

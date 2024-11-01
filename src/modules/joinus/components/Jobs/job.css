@@ -34,16 +34,7 @@
 }
 
 .firstline a span {
-    color:#7659FF;
-    font-size:1.2rem;
-}
-
-.firstline .job-desc {
-    margin-top: 0.5em;
-    display:flex;
-    gap:0.3em;
-    margin-bottom:1em;
-    align-items:center;
+    font-size:1.1rem;
 }
 
 
