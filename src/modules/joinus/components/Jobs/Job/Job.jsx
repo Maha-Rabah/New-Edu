@@ -17,9 +17,18 @@ const Job = ({id, career, pos, time, lastday}) => {
         <h4 className='job-pos'>{pos}</h4>
         <div className="joinUs-op-details">
             <ul>
-                <li className='detail'><img src={pinIcon} alt="" className='icon' /> Remote</li>
-                <li className='detail'><img src={timeIcon} alt="" className='icon' /> {time} </li>
-                <li className='detail'><img src={fileIcon} alt="" className='icon' />{lastday}</li>
+                <li className='detail'>
+                    <img src={pinIcon} alt="" className='icon' />
+                    <p>Remote</p> 
+                </li>
+                <li className='detail'>
+                    <img src={timeIcon} alt="" className='icon' /> 
+                    <p>{time}</p> 
+                </li>
+                <li className='detail'>
+                    <img src={fileIcon} alt="" className='icon' />
+                    <p>{lastday}</p>
+                </li>
             </ul>
         </div>
     </div>

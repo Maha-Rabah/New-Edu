@@ -1,3 +1,11 @@
+.centering {
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    margin: 20px;
+}
+
+
 .desc {
     font-family : "Arial";
 }
@@ -69,12 +77,15 @@
 
 .joinUs-op-details .detail {
     display:flex;
+    align-items: center;
+    gap: 0.2rem;
+    align-items: end;
     font-weight:bold;
 }
 
 .joinUs-op-details .icon {
     width:20px;
-    margin-right:0.2em;
+    margin: 0 !important;
 }
 
 .joinUs-op-details ul{
