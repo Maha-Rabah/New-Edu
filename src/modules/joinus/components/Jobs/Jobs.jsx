@@ -1,5 +1,6 @@
 import {useEffect, useState} from "react"
 import Job from './Job/Job'
+import Loader from "../../../../UI/Loader/Loader"
 
 const Jobs = () => {
     /*
@@ -42,6 +43,7 @@ const Jobs = () => {
                         lastday: "Open till filled!",
                         career: item.team,
                         job_info: item.summary,
+                        available: item.available 
                     }                
                 })
                 setJobsData(JobsData)
@@ -52,11 +54,14 @@ const Jobs = () => {
         getData()
     }, [])
     
+    console.log(jobsData)
+
 return (
     <>
         {
             isLoading ?
             jobsData.map((item) => (
+                item.available != 0 ?
                 <Job
                     id={item.id}
                     key={item.id}
@@ -64,10 +69,12 @@ return (
                     pos={item.pos}
                     time={item.time}
                     lastday={item.lastday}
-                />
+                /> 
+                :
+                null
             ))  : isError ? 
-                <p className="centering">{isError}</p>
-                : <p className="centering">Loading....</p> 
+                <p className="centering">🚨 {isError}</p>
+                : <Loader/> 
         
         }
     </>

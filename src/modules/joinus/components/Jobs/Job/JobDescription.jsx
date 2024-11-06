@@ -1,6 +1,7 @@
 import "./job.css"
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import Loader from "../../../../../UI/Loader/Loader";
 
 const JobDescription = () => {
     /*
@@ -117,8 +118,8 @@ const JobDescription = () => {
             
             <div>Interested candidates should fill in the following <a href={`${jobData.url_apply}`}>Google Form</a></div>
         </div> : isError ? 
-                <p className="centering">{isError}</p>
-                : <p className="centering">Loading....</p> 
+                <p className="centering">🚨 {isError}</p>
+                : <Loader />
         }
         </div>
     )

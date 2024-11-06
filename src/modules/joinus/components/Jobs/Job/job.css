@@ -3,6 +3,7 @@
     font-size: larger;
     font-weight: bold;
     margin: 20px;
+    color: red;
 }
 
 
@@ -190,6 +191,10 @@
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
 }
 
 .close-modal {
