@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <div className='footer'>
 
-      <div className="container">
+      <div className="footer-container">
 
         <div className="box">
             <Link to="/"><img src={logo} alt="" /></Link>
@@ -33,7 +33,7 @@ const Footer = () => {
             <ul className='drop'>
               <li><NavLink to="edumentoring">EduMentoring</NavLink></li>
               <li><NavLink to="edulens">EduLens</NavLink></li>
-              <li><NavLink to="educounseling">EduCounseling</NavLink></li>
+              <li><NavLink to="educounseling">EduCounselling</NavLink></li>
             </ul>
           </li>
           <li><NavLink to="joinus">Join Us</NavLink></li>

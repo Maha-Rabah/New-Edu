@@ -14,8 +14,8 @@ const EduCounseling = () => {
 
   const coundata={
     homepic:counpic,
-    title:'EduCounseling program',
-    desc:'A Counseling program for individuals currently applying for scholarships and seeking assistance in assessing their application files or preparing for scholarship interviews.',
+    title:'EduCounselling Project',
+    desc:'A counselling project for individuals currently applying for scholarships and seeking assistance in reviewing their application files, preparing for scholarship interviews or guidance in their scholarship journey.',
     true:false,
   }
 
@@ -27,7 +27,7 @@ const EduCounseling = () => {
   //   {title: "Essays revieweds", num: 3},
   //   {title: "Mock interviews", num: 2},
   //   ];
-  const contitle =['EduCounseling in Numbers']
+  const contitle =['EduCounselling in Numbers']
   
   ////////////////////////////////////////////////////
   const featuredata=[

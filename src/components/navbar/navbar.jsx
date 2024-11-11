@@ -1,29 +1,29 @@
-import React,{useState,useRef,useEffect} from 'react'
+import {useState,useRef,useEffect} from 'react'
 import './navbarStyle.css';
 import { NavLink } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/logo.svg';
 import { AiOutlineCloseSquare} from 'react-icons/ai';
 import { FaBars } from 'react-icons/fa';
+import { MdKeyboardArrowUp ,MdKeyboardArrowDown } from "react-icons/md";
 
 const Navbar = () => {
   const [menuOpened, setMenuOpened] = useState(false);
 
-    const dropdownRef = useRef(null);
+    const dropdownRef = useRef();
     
+
     useEffect(() => {
       const handleClickOutside = (event) => {
-        if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-          setIsOpen(false);
-        }
+          if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+              setIsOpen(false);
+          }
       };
-  
-      document.addEventListener('click', handleClickOutside);
-  
+      document.addEventListener('mousedown', handleClickOutside);
       return () => {
-        document.removeEventListener('click', handleClickOutside);
+          document.removeEventListener('mousedown', handleClickOutside);
       };
-    }, []);
+  }, []);
   
   ///////////////////////////////////////////
   const [isOpen, setIsOpen]= useState(false);
@@ -35,7 +35,7 @@ const Navbar = () => {
   return (
     <nav className='navs'>
 
-      <div className="container bottom-nav">
+      <div className="nav-container bottom-nav">
         <Link to="/" className="logo">
           <img src={logo} alt="" />
         </Link>
@@ -47,14 +47,14 @@ const Navbar = () => {
                       <li><NavLink to="about" onClick={() => setMenuOpened((prev)=> !prev)}>About</NavLink></li>
 
                       <li className='dropdown' ref={dropdownRef}>
-                        <div className="dropdown-btn" onClick={toggleDropdown}>
-                          <span>Our Work </span>
-                        </div>
-                        <ul className={isOpen ? "dropdown-content active" :"dropdown-content"} onClick={toggleDropdown}>
-                          <li><NavLink to={"edumentoring"} onClick={() => setMenuOpened((prev)=> !prev)}>EduMentoring</NavLink></li>
-                          <li><NavLink to={"edulens"} onClick={() => setMenuOpened((prev)=> !prev)}>EduLens</NavLink></li>
-                          <li><NavLink to={"educounseling"} onClick={() => setMenuOpened((prev)=> !prev)}>EduCounseling</NavLink></li>
-                        </ul>
+                          <Link className="dropdown-btn" onClick={toggleDropdown}>
+                              Our Work {isOpen ? <MdKeyboardArrowUp /> : <MdKeyboardArrowDown />}
+                          </Link>
+                          <ul className={isOpen ? "dropdown-content active" : "dropdown-content"}>
+                              <li><NavLink to={"edumentoring"} onClick={() => setIsOpen(false)}>EduMentoring</NavLink></li>
+                              <li><NavLink to={"edulens"} onClick={() => setIsOpen(false)}>EduLens</NavLink></li>
+                              <li><NavLink to={"educounseling"} onClick={() => setIsOpen(false)}>EduCounselling</NavLink></li>
+                          </ul>
                       </li>
                       <li><NavLink to="joinus" onClick={() => setMenuOpened((prev)=> !prev)}>Join Us</NavLink></li>
                       <li><NavLink to="contuct" onClick={() => setMenuOpened((prev)=> !prev)}>Contact Us</NavLink></li>

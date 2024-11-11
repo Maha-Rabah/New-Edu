@@ -1,3 +1,6 @@
+.nav-container {
+    margin: 0 4%;
+}
 
 .navs {
     position: relative;
@@ -66,11 +69,9 @@
 
 .navs .bottom-nav .nav-items li.dropdown .dropdown-btn svg {
     color: white;
-    margin-left: 10px;
-    height: 15px;
-    width: 15px;
+    margin-left: 5px;
+    font-size: 22px;
 }
-
 .navs .bottom-nav .nav-items .dropdown .dropdown-content {
     position: absolute;
     top: 130%;

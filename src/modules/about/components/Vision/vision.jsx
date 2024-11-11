@@ -1,11 +1,12 @@
-import React from 'react'
 import vision from '../../assets/vision.png';
 import './visionStyle.css'
 import roze from '../../../../assets/roze.svg'
 
 
-const title=['Our Vision and Mission'];
-const descvision= ['We envision a generation of Syrian youth empowered by education to overcome challenges and become key contributors to shaping a brighter future for Syria and the world. We facilitate access to international education for Syrian youth by providing comprehensive mentorship, financial support, networking opportunities, and harnessing the support of the Syrian diaspora.'];
+const title=['Our Vision'];
+const title2=['Our Mission']
+const descvision= ['We envision a generation of Syrian youth empowered to overcome challenges and become key contributors in shaping a brighter future for Syria and the world.'];
+const descmission= ['Our mission is to ensure that every Syrian has the opportunity for a better life through access to quality education.'];
 
 const Vision = () => {
   return (
@@ -15,6 +16,8 @@ const Vision = () => {
             <div className="info">
                 <h2 className='title'>{title}</h2>
                 <p className='desc'>{descvision}</p>
+                <h2 className='title'>{title2}</h2>
+                <p className='desc'>{descmission}</p>
             </div>
 
             <div className="image">

@@ -10,12 +10,13 @@ const Numbers = ({title,type}) => {
   const [numberdata, setNumberdata] = useState([]);
 
   useEffect(() => {
-    fetch("http://13.50.253.237:3013/statistics")
+    fetch("https://edu-bridges.somar-kesen.com/api/v1/statistics")
       .then((response) => {
         return response.json();
       })
       .then((numberdata) => {
-        setNumberdata(numberdata);
+        setNumberdata(numberdata.data);
+        console.log(numberdata)
       });
   }, []);
 
@@ -26,7 +27,8 @@ const Numbers = ({title,type}) => {
           <h2 className='title'>{title}</h2>
           <div className="info">
               <ul>
-                  {numberdata.map((item) => (
+              {numberdata?.length &&
+               numberdata.map((item) => (
                   item.type === type && (
                         <li className='num' key={item.id}>
                             {counterOn && <CountUp start={0} end={item.count} duration={2} delay={0}/>} {item.name}

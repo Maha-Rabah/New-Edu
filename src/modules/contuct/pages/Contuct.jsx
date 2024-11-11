@@ -18,7 +18,7 @@ const Contuct= () => {
     message:"",
   });
 
-  const url='https://api.edu-bridge.org.uk/contact-us';
+  const url='https://edu-bridges.somar-kesen.com/api/v1/api/v1/contact';
 
 function handle(e){
   const newdata={...data};
@@ -57,6 +57,7 @@ function submit(e){
         </div>
 
         <form method="post" action="#" className='form-container' onSubmit={(e)=>submit(e)}>
+            <h2 className='contacttit'>Contact us</h2>
             <input type="text" id="firstName" name="text"   value={data.firstName} onChange={(e)=>
             handle(e)}
              placeholder='First Name (required)'  required/>
